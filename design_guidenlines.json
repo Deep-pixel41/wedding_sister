@@ -1,0 +1,156 @@
+{
+  "project_name": "Royal Indian Wedding Invitation Website",
+  "theme_strategy": {
+    "theme": "Royal Indian Palace & Ivory Card Elegance",
+    "dark_mode_allowed": false,
+    "background_philosophy": "Light, warm, luxurious ivory paper with subtle gold texture, delicate floral patterns, and Rajasthani palace arch aesthetics. ABSOLUTELY NO dark or black backgrounds.",
+    "emotional_tone": "Grand, festive, sacred, royal, loving, and deeply rooted in Indian cultural heritage."
+  },
+  "color_palette": {
+    "hex_values": {
+      "bg_primary_ivory": "#FFFDF7",
+      "bg_secondary_cream": "#FDF8EE",
+      "bg_card_paper": "#FAF3E0",
+      "bg_accent_blush": "#FDF2F4",
+      "bg_accent_peach": "#FFF3EB",
+      "bg_accent_mint": "#F2F9F6",
+      "gold_primary": "#D4AF37",
+      "gold_champagne": "#E6CA65",
+      "gold_metallic": "#B8860B",
+      "maroon_royal": "#800020",
+      "saffron_warm": "#FF9933",
+      "text_dark_charcoal": "#2C221E",
+      "text_muted_brown": "#6B5B52",
+      "border_gold_subtle": "#E2C87C"
+    },
+    "css_variables": {
+      "--bg-primary": "45 100% 98.5%",
+      "--bg-secondary": "43 75% 96.3%",
+      "--bg-card": "42 67% 93%",
+      "--gold-primary": "46 65% 52%",
+      "--gold-champagne": "47 70% 65%",
+      "--maroon-royal": "345 100% 25%",
+      "--text-main": "18 19% 15%",
+      "--text-muted": "22 13% 37%",
+      "--border-gold": "44 64% 68%"
+    }
+  },
+  "typography": {
+    "devanagari_display_font": "Rozha One, Yatra One, serif",
+    "latin_display_font": "Cinzel, Playfair Display, serif",
+    "body_font": "Montserrat, Noto Serif Devanagari, sans-serif",
+    "google_fonts_import_url": "https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Noto+Serif+Devanagari:wght@400;600;700&family=Playfair+Display:ital,wght@0,600;0,800;1,400&family=Rozha+One&family=Yatra+One&display=swap",
+    "sizes": {
+      "sanskrit_blessing": "text-lg sm:text-xl lg:text-2xl font-bold tracking-widest text-maroon-royal",
+      "hero_headline": "text-4xl sm:text-5xl lg:text-6xl font-extrabold font-serif text-maroon-royal tracking-tight",
+      "section_title": "text-3xl sm:text-4xl lg:text-5xl font-bold font-serif text-maroon-royal text-center",
+      "sub_headline": "text-xl sm:text-2xl text-text-muted-brown font-medium",
+      "body": "text-base sm:text-lg text-text-dark-charcoal leading-relaxed"
+    }
+  },
+  "spacing_and_layout": {
+    "container_padding": "px-4 sm:px-8 lg:px-16 py-12 lg:py-20",
+    "bento_grid_ceremonies": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8",
+    "card_padding": "p-6 sm:p-8 md:p-10",
+    "border_radius": "rounded-2xl sm:rounded-3xl",
+    "shadow_style": "shadow-[0_10px_40px_rgba(184,134,11,0.12)] border border-[#E2C87C]/40",
+    "mobile_constraints": "max-w-full overflow-x-hidden touch-pan-y"
+  },
+  "components_blueprint": {
+    "hero_section": {
+      "sanskrit_blessing": "॥ श्री गणेशाय नमः ॥",
+      "subheading_hindi": "शुभ विवाह",
+      "ganesha_illustration_url": "https://images.unsplash.com/photo-1597398499308-e9848ef54122?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MDV8MHwxfHNlYXJjaHwzfHxnYW5lc2hhJTIwc3RhdHVlJTIwZ29sZCUyMHRyYWRpdGlvbmFsJTIwYXJ0d29ya3xlbnwwfHx8fDE3OTM0NzE5MDR8MA&ixlib=rb-4.1.0&q=85",
+      "bg_arch_url": "https://images.unsplash.com/photo-1761472606347-bfebc5a3e546?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MDV8MHwxfHNlYXJjaHw0fHxJbmRpYW4lMjB3ZWRkaW5nJTIwbWFyaWdvbGQlMjBmbG93ZXJzJTIwZ2FuZXNoYSUyMGRlY29yYXRpb258ZW58MHx8fHwxNzkzNDcxODk4fDA&ixlib=rb-4.1.0&q=85",
+      "marigold_garland_url": "https://images.unsplash.com/photo-1760192158969-fba5f503404f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwzfHxtYXJpZ29sZCUyMGdhcmxhbmQlMjBpbmRpYW4lMjBmZXN0aXZhbCUyMGRlY29yYXRpb258ZW58MHx8fHwxNzkzNDcxOTA0fDA&ixlib=rb-4.1.0&q=85",
+      "elements": [
+        "Gold ornament border framing hero image",
+        "Floating flower petals animation",
+        "Dynamic bride & groom names with elegant serif font",
+        "Prominent wedding date: 11 December 2026",
+        "Heartfelt invitation statement",
+        "Animated scroll indicator"
+      ]
+    },
+    "live_countdown": {
+      "target_date_ist": "2026-12-11T10:00:00+05:30",
+      "card_style": "Champagne gold metallic gradients with warm ivory backdrop and subtle shadow glow",
+      "units": ["Days / दिन", "Hours / घंटे", "Minutes / मिनट", "Seconds / सेकंड"]
+    },
+    "invitation_card_section": {
+      "bride_groom_details": "Includes parents & elders blessings",
+      "invitation_text": "Two beautiful souls, two loving families, and one sacred bond. With the blessings of our elders and the grace of the Almighty, we invite you to be a part of this joyous celebration.",
+      "visuals": "Royal envelope unfolding effect or layered ivory invitation card with gold foil edges"
+    },
+    "ceremonies_culture_section": {
+      "ceremonies": [
+        {"name": "गणेश वंदना", "title_en": "Ganesh Vandana", "desc": "Blessing ceremony invoking Lord Ganesha for auspicious beginnings"},
+        {"name": "हल्दी समारोह", "title_en": "Haldi Ceremony", "desc": "Purifying & beautifying ceremony with turmeric paste, laughter and love"},
+        {"name": "मेहंदी समारोह", "title_en": "Mehndi Ceremony", "desc": "Intricate henna art, traditional songs, and festive celebration"},
+        {"name": "संगीत संध्या", "title_en": "Sangeet Sandhya", "desc": "A night of dance, music, and joyful family performances"},
+        {"name": "बारात", "title_en": "Baraat Procession", "desc": "Grand royal arrival of the groom with music and fanfare"},
+        {"name": "वरमाला", "title_en": "Varmala", "desc": "Exchange of floral garlands symbolizing sacred acceptance"},
+        {"name": "सात फेरे", "title_en": "Saat Phere", "desc": "Seven holy vows around the sacred fire"},
+        {"name": "शुभ विदाई", "title_en": "Shubh Vidaai", "desc": "Blessings and farewell as the bride begins her new journey"}
+      ]
+    },
+    "hindi_quotes_section": {
+      "quote": "दो दिलों का मिलन, सात जन्मों का संगम।",
+      "ornaments": "Gold floral dividers, paisley lotus motifs, soft light radial glow"
+    },
+    "venue_section": {
+      "card_style": "Royal royal-card design with golden borders and Google Maps integration",
+      "google_maps_url_builder": "https://www.google.com/maps/search/?api=1&query="
+    },
+    "blessings_final_section": {
+      "blessings_en": "Your presence, love, and blessings will make this celebration even more special...",
+      "blessings_hi": "आपका आशीर्वाद ही हमारा सबसे अनमोल उपहार है।",
+      "invitation_family": "सादर आमंत्रित – परिवार सहित",
+      "closing_tagline": "शुभ विवाह | शुभ मंगलमय जीवन"
+    },
+    "host_admin_panel": {
+      "route": "/host",
+      "hidden_from_nav": true,
+      "storage_key": "royal_wedding_host_customization",
+      "editable_fields": [
+        "bride_name",
+        "groom_name",
+        "bride_parents",
+        "groom_parents",
+        "wedding_date",
+        "venue_name",
+        "venue_address",
+        "venue_city_state",
+        "ceremony_time",
+        "host_family_name",
+        "invitation_message"
+      ],
+      "actions": ["Save Changes", "Reset to Default", "Preview Invitation"]
+    }
+  },
+  "interactive_and_animations": {
+    "floating_petals": "Canvas or Framer Motion particles drifting gently down screen",
+    "golden_sparkles": "Subtle sparkling CSS canvas or motion dots around Ganesha and countdown",
+    "music_toggle": "Floating bottom-right button for ambient classical sitar/flute wedding music (muted by default)",
+    "smooth_scroll": "Lenis smooth scroll or CSS scroll-behavior: smooth"
+  },
+  "data_testid_blueprint": {
+    "nav_logo": "wedding-nav-logo",
+    "nav_host_link": "nav-host-customizer-button",
+    "hero_scroll_btn": "hero-scroll-down-button",
+    "music_toggle_btn": "ambient-music-toggle-button",
+    "countdown_card": "live-wedding-countdown-card",
+    "venue_directions_btn": "get-directions-google-maps-button",
+    "host_form_save_btn": "host-panel-save-button",
+    "host_form_reset_btn": "host-panel-reset-button",
+    "host_form_preview_btn": "host-panel-preview-button",
+    "ceremony_card_prefix": "ceremony-card-"
+  },
+  "instructions_to_main_agent": [
+    "Import Google Fonts dynamically in index.html or App.js (Rozha One, Cinzel, Montserrat, Noto Serif Devanagari).",
+    "Store host custom settings in localStorage so host edits reflect across all sections instantly.",
+    "Ensure all buttons have high-contrast hover states and explicit data-testid attributes.",
+    "Do NOT introduce dark mode or black backgrounds anywhere.",
+    "Ensure total mobile responsiveness with no horizontal overflow."
+  ]
+}

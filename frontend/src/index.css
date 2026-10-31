@@ -1,0 +1,233 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Lenis smooth-scroll recommended styles */
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+@layer base {
+    :root {
+        --background: 45 100% 98.5%;
+        --foreground: 18 19% 15%;
+        --card: 0 0% 100%;
+        --card-foreground: 0 0% 3.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 0 0% 3.9%;
+        --primary: 44 55% 44%;
+        --primary-foreground: 45 100% 98.5%;
+        --secondary: 43 60% 94%;
+        --secondary-foreground: 18 19% 15%;
+        --muted: 43 50% 94%;
+        --muted-foreground: 22 13% 37%;
+        --accent: 43 60% 93%;
+        --accent-foreground: 18 19% 15%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 44 64% 68%;
+        --input: 44 50% 78%;
+        --ring: 44 55% 44%;
+        --chart-1: 12 76% 61%;
+        --chart-2: 173 58% 39%;
+        --chart-3: 197 37% 24%;
+        --chart-4: 43 74% 66%;
+        --chart-5: 27 87% 67%;
+        --radius: 0.75rem;
+    }
+    .dark {
+        --background: 0 0% 3.9%;
+        --foreground: 0 0% 98%;
+        --card: 0 0% 3.9%;
+        --card-foreground: 0 0% 98%;
+        --popover: 0 0% 3.9%;
+        --popover-foreground: 0 0% 98%;
+        --primary: 0 0% 98%;
+        --primary-foreground: 0 0% 3.9%;
+        --secondary: 0 0% 14.9%;
+        --secondary-foreground: 0 0% 98%;
+        --muted: 0 0% 14.9%;
+        --muted-foreground: 0 0% 63.9%;
+        --accent: 0 0% 14.9%;
+        --accent-foreground: 0 0% 98%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 0 0% 14.9%;
+        --input: 0 0% 14.9%;
+        --ring: 0 0% 83.1%;
+        --chart-1: 220 70% 50%;
+        --chart-2: 160 60% 45%;
+        --chart-3: 30 80% 55%;
+        --chart-4: 280 65% 60%;
+        --chart-5: 340 75% 55%;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        @apply bg-background text-foreground;
+        font-family: Montserrat, "Noto Serif Devanagari", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+    }
+    ::selection {
+        background: rgba(230, 202, 101, 0.45);
+        color: #2c221e;
+    }
+    @media (prefers-reduced-motion: no-preference) {
+        body {
+            scrollbar-width: thin;
+            scrollbar-color: #e2c87c #fdf8ee;
+        }
+        body::-webkit-scrollbar {
+            width: 9px;
+        }
+        body::-webkit-scrollbar-thumb {
+            background: #e2c87c;
+            border-radius: 8px;
+        }
+        body::-webkit-scrollbar-track {
+            background: #fdf8ee;
+        }
+    }
+}
+
+@layer base {
+    [data-debug-wrapper="true"] {
+        display: contents !important;
+    }
+
+    [data-debug-wrapper="true"] > * {
+        margin-left: inherit;
+        margin-right: inherit;
+        margin-top: inherit;
+        padding-left: inherit;
+        padding-right: inherit;
+        padding-top: inherit;
+        padding-bottom: inherit;
+        column-gap: inherit;
+        row-gap: inherit;
+        gap: inherit;
+        border-left-width: inherit;
+        border-right-width: inherit;
+        border-top-width: inherit;
+        border-bottom-width: inherit;
+        border-left-style: inherit;
+        border-right-style: inherit;
+        border-top-color: inherit;
+        border-bottom-color: inherit;
+    }
+}
+
+/* ---------- Royal ivory & gold ornament layer ---------- */
+
+.gold-text {
+    background: linear-gradient(
+        100deg,
+        #9c7a1e 0%,
+        #d4af37 25%,
+        #f3e3ac 50%,
+        #d4af37 75%,
+        #9c7a1e 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.paper-texture {
+    background-image:
+        radial-gradient(1100px 520px at 88% -5%, rgba(230, 202, 101, 0.16), transparent 60%),
+        radial-gradient(900px 460px at -10% 22%, rgba(253, 242, 244, 0.95), transparent 55%),
+        radial-gradient(1000px 620px at 50% 112%, rgba(242, 249, 246, 0.95), transparent 60%);
+}
+
+.card-royal {
+    background: #fffdf7;
+    box-shadow:
+        0 0 0 1px rgba(226, 200, 124, 0.55),
+        0 0 0 5px #fffdf7,
+        0 0 0 6px rgba(212, 175, 55, 0.45),
+        0 24px 70px rgba(128, 0, 32, 0.10);
+}
+
+.diya-flame {
+    animation: flame 2.4s ease-in-out infinite;
+    transform-origin: 50% 80%;
+}
+@keyframes flame {
+    0%, 100% { transform: scale(1) skewX(0deg); opacity: 1; }
+    30% { transform: scale(1.06, 1.12) skewX(1.5deg); opacity: 0.92; }
+    60% { transform: scale(0.97, 0.95) skewX(-1.5deg); opacity: 1; }
+}
+
+.animate-marquee {
+    animation: marquee 60s linear infinite;
+}
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+.spin-slow {
+    animation: spinSlow 80s linear infinite;
+}
+@keyframes spinSlow {
+    to { transform: rotate(360deg); }
+}
+
+.scroll-hint-bar {
+    animation: hintDrop 1.9s ease-in-out infinite;
+}
+@keyframes hintDrop {
+    0% { transform: translateY(-4px); opacity: 0; }
+    35% { opacity: 1; }
+    100% { transform: translateY(14px); opacity: 0; }
+}
+
+.btn-shimmer {
+    position: relative;
+    overflow: hidden;
+}
+.btn-shimmer::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        110deg,
+        transparent 30%,
+        rgba(255, 253, 247, 0.55) 50%,
+        transparent 70%
+    );
+    transform: translateX(-120%);
+    transition: transform 0.9s ease;
+}
+.btn-shimmer:hover::after {
+    transform: translateX(120%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .animate-marquee,
+    .spin-slow,
+    .diya-flame,
+    .scroll-hint-bar {
+        animation: none !important;
+    }
+}
