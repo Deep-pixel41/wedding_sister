@@ -31,10 +31,13 @@ export default function InvitationCard() {
                         <CornerFlourish className="absolute right-3 top-3 h-12 w-12 rotate-90 text-gold/70" />
                         <CornerFlourish className="absolute bottom-3 right-3 h-12 w-12 rotate-180 text-gold/70" />
                         <CornerFlourish className="absolute bottom-3 left-3 h-12 w-12 -rotate-90 text-gold/70" />
-
-                        <p className="mx-auto max-w-xl font-script text-lg italic leading-relaxed text-ink sm:text-xl" data-testid="invitation-message">
+                        
+                        <div
+                            className="mx-auto max-w-xl whitespace-pre-line break-words font-script text-base italic leading-relaxed text-ink sm:text-xl"
+                            data-testid="invitation-message"
+                        >
                             {message}
-                        </p>
+                        </div>
 
                         <Divider className="mx-auto mt-8 h-6 w-48 text-gold" />
 
